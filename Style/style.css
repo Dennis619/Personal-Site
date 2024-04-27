@@ -1,0 +1,697 @@
+/*all*/
+body{
+    margin: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #ECECEC;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.newTab{
+    target: "_blank";
+}
+
+h1{
+    margin: 3px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:3rem;
+    letter-spacing: 5px;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+section{
+    width: 100vw;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: #2e76d4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+button:hover{
+    color: #000000;
+}
+
+/*navigation*/
+.navigation{
+    position: fixed;
+    z-index: 2;
+    height: 60px;
+}
+.navigation, .footer{
+    background-color: #2e76d4;
+}
+.navigation .container, .footer .container{
+    color: #FFFFFF;
+}
+.hambugerIcon svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.rotatehambugerIcon{
+    transform: rotate(90deg);
+}
+.hambugerIcon button{
+    padding: 5px 20px;
+    margin: 0;
+}
+.navigation ul, .footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.navigation a, .footer a{
+    text-decoration: none;
+    color: #4A4A4A;
+}
+.nav-item{
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.active a{
+    color: #FFFFFF;
+}
+.active{
+    background-color: #000000;
+}
+.nav-item a:hover{
+    color: #9B9B9B;
+}
+
+/*intro*/
+.intro{
+    padding-top: 55px;
+}
+.intro, .about, .Resume, .contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 585px;
+}
+.grid-item{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.intro .container{
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 1s ease;
+}
+.intro .container:hover{
+    transform: scale(1.1);
+}
+.intro .text{
+    padding-left: 110px;
+}
+.intro .DennoIMG, .intro .text{
+    background-image: url(../Assets/Image/IMG-20201026-WA0003.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.DennoIMG{
+    overflow: hidden;
+    transition: transform 1s ease;
+}
+.DennoIMG:hover{
+    transform: scale(1.05);
+}
+.intro .text{
+    background-image: url(../Assets/Textures/GrungeBackgrounf.png);
+}
+.intro h2{
+    font-size: 1.5rem;
+    margin: 3px;
+    letter-spacing: 1px;
+}
+
+/*about*/
+.about .grid-item{
+    background-color: #ECECEC;
+    color: #000000;
+}
+.about .container, .Resume .container, .contact .container{
+    align-items: center;
+}
+.about h2 , .Resume h2, .services h2, .contact h2, .ProjectHeading h2{
+    letter-spacing: .5rem;
+    margin: 0px 0px 10px 0px;
+}
+.line-Text{
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin: 0px;
+    width: 130px;
+    margin: 0px 0px 20px 0px;
+}
+.about p, .contact p{
+    color: #4A4A4A;
+}
+.about img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+.addOverLay{
+    position: relative;
+    transition: transform 1s ease;
+}
+.addOverLay:hover{
+    transform: scale(1.05);
+}
+.OverlayIMg{
+    position: absolute;
+    text-align: center;
+}
+.OverlayIMg img{
+    width: 70%;
+    margin: auto;
+}
+.aboutMeContent{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.aboutMeContentText, .ResumeMeContentText, .contactMeContent{
+    width: 70%;
+    margin: auto;
+}
+
+/*resume*/
+.Resume{
+    height: 650px;
+}
+.Resume .container{
+    justify-content: center;
+}
+.buttonResume{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Assets/Textures/Circle\ Brush\ Stroke\ 2.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    transition: transform 1s ease;
+}
+.buttonResume:hover{
+    transform: scale(1.05);
+}
+.buttonResume button{
+    margin-bottom: 30px;
+}
+.ResumeMeContent{
+    margin-top: 0px;
+    padding-top: 20px;
+}
+.Resume .line-Text, .Projects .line-Text{
+    border-color:#FFFFFF;
+}
+.Resume p, .Projects p, .Projects h4{
+    color: #9B9B9B;
+}
+.Resume h3{
+    margin: 5px 0px;
+}
+.Resume li{
+    list-style: none;
+}
+
+/*services*/
+.services{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: #ECECEC;
+    height: fit-content;
+}
+.services .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #ECECEC;
+    gap: 10px;
+    padding-top: 20px;
+    justify-content: center;
+}
+.services .grid-item{
+    display: flex;
+    gap: .5rem;
+    background-color: #ECECEC;
+    color: #000000;   
+    width: 85%;
+    margin: 0px auto; 
+}
+.titleText{
+    padding-top: 1rem;
+}
+.iconSVG svg{
+    width: 25px;
+    height: 25px;
+    color: #2e76d4;
+}
+.services h4{
+    margin-top: 0px;
+}
+
+/*projects*/
+.Projects{
+    background-color: #000000;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 10px;
+    height: fit-content;
+    padding: 30px 0px;
+}
+.Projects .grid-item{
+    width: 85%;
+    margin: 0px auto;
+}
+.project-card{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    min-height: 250px;
+}
+.project{
+    margin: 0px 10px;
+    padding: 1px 5px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hoverButton{
+    display: hidden;
+}
+.visitProject{
+    position: relative;
+    z-index: 1;
+    bottom: 3%;
+}
+.visitProject button{
+    width: 100%;
+}
+.project.container{
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    background-color: #FFFFFF;   
+}
+.Projects img{
+    padding-top: 5px;
+    border-radius: 10px;
+    min-width: 100%;
+}
+.Projects h4{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-content: flex-end;
+}
+.project-description{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2e76d480;
+    color: #FFFFFF;
+}
+.project-description p{
+    color: #FFFFFF;
+}
+.project:hover{
+    background-color: #2e76d4;
+}
+
+/*contact me*/
+.contact .grid-item{
+    background-color: #ECECEC;
+    color: #000000;  
+}
+.contact .addOverLay{
+    height: 100%;
+}
+.contact img{
+    border-radius: 10px;
+    width: 60%;
+}
+.contact .OverlayIMg img{
+    transform: rotate(-25deg);
+    width: 95%;
+}
+
+
+.footer-item{
+    height: fit-content;
+    padding: 5px 3px 0px 3px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.footer svg{
+    color: #4A4A4A;
+    width: 2rem;
+    height: 2rem;
+}
+.footer svg:hover{
+    color: #000000;
+}
+.footer a{
+    padding-top: 5px;
+}
+.footer .container{
+    height: 80px;
+    gap: .8rem;
+    align-items: center;
+}
+
+/*responsiveness*/
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    /*global*/
+    h1{
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+    h2{
+        font-size: 1.7rem;
+        letter-spacing: .1rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1.1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    /*intro*/
+    .intro .text{
+        padding-left: 70px;
+    }
+
+    /*about*/
+    .about .OverlayIMg{
+        width: 100%;
+    }
+
+    /*resume*/
+    .Resume .buttonResume{
+        width: 100%;
+    }
+
+    /*project*/
+    .project{
+        margin: 0px;
+        border: 3px;
+        width: 100%;
+    } 
+}
+/*mobile*/
+@media (max-width: 768px) {
+    /*global*/
+    h1{
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+    }
+    h2{
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .line-Text{
+        box-sizing: 2px;
+        border-style: solid;
+        border-radius: 5px;
+        width: 25%;
+        margin: 0px 0px 10px 0px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    button{
+        padding: 5px 8px;
+        font-size: 1rem;
+        margin: 0px;
+    }   
+
+    /*nav respo*/
+    .navigation{
+        height: fit-content;
+    }
+    .navigation .container{
+        margin: 2px 0px 0px 0px;
+    }
+    .navigation ul{
+        flex-direction: column;
+        gap: 1px;
+    }
+    .nav-item{
+        padding: 5px 20px;
+        border-radius: 0px;
+    }
+
+    /*intro respo*/
+    .intro{
+        max-height: 550px;
+        padding-top: 0px;
+    }
+    .afterAddingNavBar{
+        padding-top: 55px;
+    }
+    .intro .grid-item.DennoIMG{
+        order: 1;
+        visibility: hidden;
+        z-index: -1;
+    }
+    .intro .grid-item.text{
+        width: 100vw;
+        padding-left: 0px;
+    }
+    .introContent{
+        width: 90%;
+        margin: auto;
+    }
+
+    /*about respo*/
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;
+    }
+    .about .grid-item{
+        width: 90%;
+    }
+    .line-Text{
+        border-color:#000000;
+    }
+    .aboutMeContentText{
+        width: 90%;
+    }
+    .aboutMeContent{
+        width: 70%;
+    }
+    .about .OverlayIMg{
+        width: 100%;
+    }
+    .about .grid-item.container.addOverLay{
+        left: 5%;
+    }
+
+    /*resume respo*/
+    .Resume{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    .Resume .grid-item{
+        width: 90%;
+    }
+    .ResumeMeContentText{
+        width: 90%;
+    }
+    .buttonResume{
+        position: relative;
+        left: 5%;
+        width: 100%;
+        margin-top: 0px;
+        background-size: contain;
+    }
+    .buttonResume button{
+        padding: .8rem;
+        margin: 0px 10px 25px 0px;
+    }
+
+    /*services respo*/
+    .services{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 4fr;
+    }
+    .services .grid-item{
+        width: 90%;
+    }
+    .services .line-Text{
+        width: 60%;
+    }
+    .iconSVG svg{
+        width: 1rem;
+        height: 1rem;
+    }
+    .services .content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2px;
+        height: fit-content;
+        padding-top: 10px;
+        align-items: flex-start;
+    }
+    .services .content .grid-item{
+        padding-top: 5px;
+    }
+
+    /*projects respo*/
+    .Projects{
+        height: fit-content;
+        padding:0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr;
+    }
+    .Projects .grid-item{
+        width: 90%;
+        padding: 0px;
+    }
+    .ProjectHeading.grid-item{
+        padding-top: 10px;
+    }
+    .project-card{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+    .project.container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: fit-content;
+        max-width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+    .project{
+        border: 0px;
+        padding: 0px;
+        margin: 0;
+    }
+    .Projects img{
+        padding-top: 0px;
+    }
+    .project img{
+        max-width: 250px;
+        height: 120px;
+    }
+    .project-description{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+    }
+    .project-description h4{
+        margin:0px;
+        font-size: 1rem;
+    }
+    .project-description p{
+        margin:0px;
+        font-size: .8rem;
+    }
+
+    /*contact respo*/
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;
+    }
+    .contact .grid-item{
+        width: 90%;
+    }
+    .contact .line-Text{
+        border: 2px solid #000000;
+        border-radius: 5px;
+        width: 70px;
+        margin: 0px 0px 10px 0px;
+    }
+    .contactMeContent{
+        width: 90%;
+    }
+    .contactMeContent.addOverLay img{
+        width: auto;
+        height: 300px;
+        padding-bottom: 20px;
+    }
+
+    .footer svg{
+        width: 1rem;
+        height: 1rem;
+    }
+    .footer .container{
+        height: 60px;
+        gap: .5rem;
+    }
+    .footer h4{
+        font-size: 1rem;
+    }
+}
+
+/*Tablets*/
